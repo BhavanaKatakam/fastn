@@ -1,40 +1,49 @@
--- ds.page: Welcome to doc-site
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: #E6E6F5
+align-content: center
+-- card:
+title: Coffee
+description: Coffee is a beverage prepared from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans
+
+-- card:
+title: Tea
+description: Tea is an aromatic beverage prepared by pouring hot or boiling water over cured or fresh leaves of Camellia sinensis.
+
+-- end:ftd.column
+
+-- component card:
+caption title: beverage
+body description: types of beverages
+
+-- ftd.row:
+width.fixed.px: 750
+height.fixed.px: 350
+background.solid: #FFFFFF
+border-width.px: 3
+padding.px: 20
+border-radius.px: 20
+spacing.fixed.px: 10
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- ftd.column:
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
-
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ftd.text: $card.title
+role: $inherited.types.heading-medium
+style: bold
+color: $inherited.colors.text-strong
+-- ftd.text: $card.description
+role: $inherited.types.copy-regular
 
 
--- ds.h3: 🎯 Used by?
 
-Our all documentation sites uses this `doc-site` theme.
+-- end: ftd.column
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+-- ftd.image:
+src: https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p.jpg
+height: fill-container
 
--- ds.h2: Learn fastn and become a pro?
+-- end: ftd.row
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: ds.page
+-- end: card
